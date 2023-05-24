@@ -7,12 +7,12 @@ export const plugin = {
         repository: "https://github.com/iriscent-chat/plugins",
     },
     load: () => {
-        
+        console.log(this.data.name + " loaded!");
     },
-    onmessage: () => {
-
+    onmessage: (e) => {
+        console.log("Got message event data: " + e);
     },
-    onevent: () => {
-
+    onevent: (e) => {
+        console.log("Got event data: " + e);
     },
 }
