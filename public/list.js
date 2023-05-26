@@ -27,9 +27,6 @@ pluginArray.forEach(e => {
         // Card Repository
         cardBody[4].href = e[1].data.repository; 
 
-        // Card Plugin ID
-        cardBody[6].innerText = e[0]; 
-
         plugins.appendChild(clone);
     } else {
         alert("Templating not supported in your browser :(");
