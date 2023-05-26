@@ -7,7 +7,7 @@ export default {
         repository: "https://github.com/iriscent-chat/plugins",
         url: "https://raw.githubusercontent.com/Iriscent-Chat/plugins/main/dist/customThemeLoader.js"
     },
-    load: () => {
+    onload: () => {
         console.log(this.data.name + " loaded!");
     },
     onmessage: (e) => {
