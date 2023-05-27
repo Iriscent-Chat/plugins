@@ -1,3 +1,5 @@
+const notifAudio = new Audio("https://github.com/Iriscent-Chat/plugins/raw/main/dist/notificationSound/notification.wav");
+
 const plugin = {
     data: {
         author: "FelixFromDiscord",
@@ -10,11 +12,9 @@ const plugin = {
     onload: () => {
         console.log(plugin.data.name + " loaded!");
     },
-    onmessage: (e) => {
-        console.log("Got message event data: " + e);
-    },
+    onmessage: (e) => {},
     onevent: (e) => {
-        console.log("Got event data: " + e);
+        notifAudio.play();
     },
 }
 
